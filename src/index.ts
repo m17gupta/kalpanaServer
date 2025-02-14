@@ -8,9 +8,9 @@ import { Server as WebSocketServer, WebSocket } from 'ws';
 const  AuthRoutes= require('./routes/auth/AuthRoutes');
 
 const app: express.Application = express();
-const PORT = process.env.PORT || 5001;
-const HOSTNAME = process.env.HOSTNAME || 'localhost';
-const PROTOCOL = process.env.PROTOCOL || 'http';
+const PORT =  5001;
+const HOSTNAME =  'localhost';
+const PROTOCOL = 'http';
 
 // Set the limit to 500MB, you can adjust it as per your needs
 app.use(express.json());
